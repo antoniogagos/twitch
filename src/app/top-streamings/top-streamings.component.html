@@ -1,0 +1,26 @@
+  <div id="top-streamings_container">
+    <div class="top-streamings-text">TOP STREAMINGS</div>
+    <div id="top-streamings">
+      <div *ngFor="let stream of topStreamings">
+
+          <div class="top-streaming" (click)="onStreamClicked(stream)">
+            <iframe
+              [src]="sanitizer.bypassSecurityTrustResourceUrl(stream.stream_name)"
+              height="150"
+              width="250"
+              frameborder="0"
+              allowfullscreen="true"></iframe>
+<!--             <img
+                class="top-streaming__picture"
+                src="{{stream.thumbnail_url.replace('{width}', '150').replace('{height}', '90')}}"/> -->
+            <div class="top-streaming__title">{{stream.title.toUpperCase()}}</div>
+            <div class="top-streaming__viewer-count">
+              {{stream.viewer_count}}
+              <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                <path fill="#E91E63" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+              </svg>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,10 @@
+<div id="top-game_container">
+  <div class="top-game-text">TOP GAMES</div>
+  <div id="top-games">
+    <div *ngFor="let game of featuredGames">
+      <div class="top-game" (click)="onGameClicked(game)">
+        <img class="top-game__picture" src="{{game.picture}}"/>
+      </div>
+    </div>
+  </div>
+</div>

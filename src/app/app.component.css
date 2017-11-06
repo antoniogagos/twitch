@@ -1,0 +1,74 @@
+#content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100%;
+  background: #836e8a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffde21 -20%,#836e8a 100%);
+}
+
+.header-twitch-logo {
+  margin: auto;
+}
+
+#toolbar {
+  position: fixed;
+  font-weight: bold;
+  z-index: 1;
+  height: 50px;
+  padding: 0 10px;
+  background-color: #462f4e;;
+  color: #83749e;
+  align-items: center;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  justify-content: space-around;
+}
+
+.toolbar-icon {
+  text-align: center;
+}
+
+.active {
+  color: #fff;
+}
+
+.active svg path {
+  fill: #fff;
+}
+
+
+@media screen and (min-width: 1000px) {
+  #content {
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(138, 137, 137, 0.06), 0 2px 5px 0 rgba(0,0,0,0.2);
+    display: block;
+    background: #836e8a;
+    height: calc(100% - 40px);
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    width: 995px;
+  }
+
+  #toolbar {
+    width: 995px;
+    margin: auto;
+  }
+}
+

@@ -1,20 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div id="content">
+  <div class="header">
+    <div class="header-twitch-logo">
+      <svg width="140" height="50" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 86"><defs><style>.cls-1{fill:#6441a4;}</style></defs><title>Twitch</title><path class="cls-1" d="M331,79H315V66H287L274,79H260l-8,7V79H239V65H189V79H129L115,65H88v59l13,13,23,14h18v-4l7,4h36l6-8,1,8h23l1-8,8,8h21l1-8,7,8h23l9-8v8h11.89L308,143v8h14l21-16V91ZM123,101H109v14h14v16.11H104L94,121V71h15V85h14v16Zm66,19-10,11-50.11.11L129,85h16v30h6V85h16v30h6V85h16v35Zm22,11H195V85h16v46Zm0-52H195V71h16v8Zm35,22H233v14h13v16H227l-10-10V71h16V85h13v16Zm41,0H267v14h20v16H262l-10-10V95l10-10h25v16Zm50,30H323V101H308v30H293V72h16V85h19l9,10v36Z" transform="translate(-88 -65)"/></svg>
+    </div>
+  </div>
+  <nav id="toolbar">
+    <a routerLink="/dashboard" routerLinkActive="active">
+      <div class="toolbar-icon tab--selected">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="#8577a0" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+        </svg>
+        <div>Home</div>
+      </div>
+    </a>
+
+    <a routerLink="/trending" routerLinkActive="active">
+      <div class="toolbar-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24"><path d="M446.906 299.769c-5.865-76.359-41.417-124.21-72.781-166.436C345.083 94.241 320 60.483 320 10.685c0-4-2.24-7.656-5.792-9.489-3.563-1.844-7.844-1.542-11.083.812-47.104 33.706-86.406 90.515-100.135 144.719-9.531 37.737-10.792 80.161-10.969 108.18-43.5-9.291-53.354-74.359-53.458-75.068-.49-3.375-2.552-6.312-5.552-7.916-3.031-1.583-6.594-1.698-9.667-.177-2.281 1.104-55.99 28.394-59.115 137.355-.219 3.625-.229 7.261-.229 10.896 0 105.857 86.135 191.987 192 191.987.146.01.302.031.427 0h.135C362.167 511.681 448 425.667 448 319.997c0-5.323-1.094-20.228-1.094-20.228zM256 490.652c-35.292 0-64-30.581-64-68.172 0-1.281-.01-2.573.083-4.156.427-15.853 3.438-26.675 6.74-33.873 6.188 13.291 17.25 25.509 35.219 25.509 5.896 0 10.667-4.771 10.667-10.666 0-15.186.313-32.706 4.094-48.518 3.365-14.02 11.406-28.936 21.594-40.893 4.531 15.52 13.365 28.081 21.99 40.341 12.344 17.54 25.104 35.675 27.344 66.6.135 1.833.271 3.677.271 5.656-.002 37.59-28.71 68.172-64.002 68.172z" fill="#8577a0"/></svg>
+        <div>Hot</div>
+      </div>
+    </a>
+
+    <a routerLink="/favorites" routerLinkActive="active">
+      <div class="toolbar-icon">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="#8577a0" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+        </svg>
+        <div>Favorites</div>
+      </div>
+    </a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
